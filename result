@@ -1,0 +1,69 @@
+STDOUT/STDERR
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 263 entries, 0 to 262
+Data columns (total 25 columns):
+ #   Column            Non-Null Count  Dtype  
+---  ------            --------------  -----  
+ 0   ordernumber       263 non-null    int64  
+ 1   quantityordered   263 non-null    int64  
+ 2   priceeach         263 non-null    float64
+ 3   orderlinenumber   263 non-null    int64  
+ 4   sales             263 non-null    float64
+ 5   orderdate         263 non-null    object 
+ 6   status            263 non-null    object 
+ 7   qtr_id            263 non-null    int64  
+ 8   month_id          263 non-null    int64  
+ 9   year_id           263 non-null    int64  
+ 10  productline       263 non-null    object 
+ 11  msrp              263 non-null    int64  
+ 12  productcode       263 non-null    object 
+ 13  customername      263 non-null    object 
+ 14  phone             263 non-null    object 
+ 15  addressline1      263 non-null    object 
+ 16  addressline2      147 non-null    object 
+ 17  city              263 non-null    object 
+ 18  state             263 non-null    object 
+ 19  postalcode        263 non-null    object 
+ 20  country           263 non-null    object 
+ 21  territory         263 non-null    object 
+ 22  contactlastname   263 non-null    object 
+ 23  contactfirstname  263 non-null    object 
+ 24  dealsize          263 non-null    object 
+dtypes: float64(2), int64(7), object(16)
+memory usage: 51.5+ KB
+Result
+(None,
+    ordernumber  quantityordered  priceeach  orderlinenumber    sales  \
+ 0        10223               37     100.00                1  3965.66   
+ 1        10361               20      72.55               13  1451.00   
+ 2        10174               34     100.00                4  8014.82   
+ 3        10258               32     100.00                6  7680.64   
+ 4        10270               21     100.00                9  4905.39   
+ 
+     orderdate   status  qtr_id  month_id  year_id  ...  \
+ 0  2004-02-20  Shipped       1         2     2004  ...   
+ 1  2004-12-17  Shipped       4        12     2004  ...   
+ 2  2003-11-06  Shipped       4        11     2003  ...   
+ 3  2004-06-15  Shipped       2         6     2004  ...   
+ 4  2004-07-19  Shipped       3         7     2004  ...   
+ 
+                               addressline1  addressline2            city  \
+ 0                        636 St Kilda Road       Level 3       Melbourne   
+ 1  Monitor Money Building, 815 Pacific Hwy       Level 6       Chatswood   
+ 2                   31 Duncan St. West End           NaN  South Brisbane   
+ 3                           2-2-8 Roppongi           NaN       Minato-ku   
+ 4  Monitor Money Building, 815 Pacific Hwy       Level 6       Chatswood   
+ 
+         state postalcode    country territory contactlastname  \
+ 0    Victoria       3004  Australia      Apac        Ferguson   
+ 1         NSW       2067  Australia      Apac          Huxley   
+ 2  Queensland       4101  Australia      Apac        Calaghan   
+ 3       Tokyo   106-0032      Japan     Japan       Shimamura   
+ 4         NSW       2067  Australia      Apac          Huxley   
+ 
+   contactfirstname dealsize  
+ 0            Peter   Medium  
+ 1           Adrian    Small  
+ 2             Tony    Large  
+ 3            Akiko    Large  
+ 4           Adrian   Medium 
